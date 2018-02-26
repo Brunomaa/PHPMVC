@@ -1,0 +1,17 @@
+
+{
+
+  "nanme":"son/mvc",
+  "require":{
+      "php":">=5.6"
+    },
+"authors":[
+    
+   {
+     "name":"Bruno Martins",
+     "email":"brunoamartins010@ouylook.com"       
+   } 
+    
+   ]
+
+}
