@@ -3,8 +3,10 @@
         <title>Alteração Git</title>
     </head>
     <body>
-       <$php
-        
-       >
+       <?php
+          
+          
+        ?>
+        <p>TESTE</p>
     </body>
 </html>
