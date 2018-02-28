@@ -3,10 +3,12 @@
         <title>Alteração Git</title>
     </head>
     <body>
-       <?php
+       <?php         
+         require_once "../vendor/autoload.php"; 
           
-          
+         echo "Ok";
+         
         ?>
-        <p>TESTE</p>
+        <p></p>
     </body>
 </html>

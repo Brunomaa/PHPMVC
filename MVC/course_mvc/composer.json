@@ -11,7 +11,13 @@
      "name":"Bruno Martins",
      "email":"brunoamartins010@ouylook.com"       
    } 
-    
-   ]
-
+   ],
+   "autoload": {
+      "psr-4":{
+        "SON\\":"vendor/SON",
+        "App\\":"App/"
+        
+        } 
+    }
+   
 }
