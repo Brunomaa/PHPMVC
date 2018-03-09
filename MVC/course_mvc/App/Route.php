@@ -2,39 +2,18 @@
 
 namespace App;
 
-class Route {
-    private $routes;
-    
-    public function _construct()
+use SON\Init\Bootstrap;
+ 
+class Route extends Bootstrap
+{
+   
+    protected function initRoutes()
     {
-        $this->initRoutes();
-        
-    }
-    public function initRoutes()
-    {
-        $routes['home'] = array('route'=>'/','controller'=>"indexcontroller",'action'=>'index');
-        $routes['contact'] = array('route'=>'/contact','controller'=>"indexcontroller",'action'=>'contact');       
-        $this->setRoute($routes);
-    }
-    
-    public function run($url)
-    {
-        array_walk($this->routes, function($route) use ($url) {
-            if()
-        });
-        
+        $routes['home'] = array('route' => '/', 'controller' => 'indexController', 'action' => 'index');
+        $routes['contact'] = array('route' => '/contact', 'controller' => 'indexController', 'action' => 'contact');
+        $this->setRoutes($routes);
     }
 
-        public function  setRoute(array $routes) 
-    {
-        $this->route = $routes;
-        
-    }
+}
 
-
-    public function getUrl()
-    {
-        return parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH);
-    }    
-       
-    }
+?>
