@@ -1,33 +1,24 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Action;
 
-class indexController 
+class indexController extends Action
 {
-    private $view;
-    
-    public function __construct() 
-    {
-        $this->view =  new \stdClass;
-        
-    }
-
+ 
         public function index()
     {  
             $this->view->cars =  array("Mustang", "Ferrari");       
-            
+            $this->render("index");
     }
     
    public function contact()
     {   
        $cars = array("Porsche", "Dodge");
        include_once "../App/Views/index/contact.phtml";
+       $this->render("contact");
         
     }
     
-   public function  render() 
-   {
-     $current = get_class($this);
-        
-   }
+  
 }
+ 
